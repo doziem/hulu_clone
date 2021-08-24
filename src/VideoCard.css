@@ -1,0 +1,36 @@
+.videocard {
+  max-height: 40rem;
+  max-width: 40rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1.3rem;
+  color: #fff;
+  transition: transform 150ms ease;
+}
+.text {
+  display: flex;
+  max-width: 13rem;
+  /* flex-wrap: wrap; */
+}
+.videocard:hover {
+  transform: scale(1.09);
+}
+.videocard > img {
+  max-height: 10rem;
+  object-fit: contain;
+  max-width: 15rem;
+}
+.videocard > h4,
+p {
+  /* text-transform: capitalize; */
+  max-width: 13rem;
+  padding-top: 0.1rem;
+}
+.videocard__stat {
+  display: none;
+}
+
+.videocard:hover > .videocard__stat {
+  display: flex;
+  margin-right: 2rem;
+}

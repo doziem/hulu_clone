@@ -1,0 +1,35 @@
+.navbar {
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  padding-left: 2rem;
+  /* position: fixed; */
+  overflow-x: scroll;
+}
+
+/* hide scroll bar in chrome safari and opera */
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+/* hide scroll bar for IE,Edge and firefox */
+.navbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none;
+}
+
+.navbar > h4 {
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  padding: 0rem 0.4rem;
+  flex-direction: column;
+  opacity: 0.7;
+  transition: transform 50ms ease-in-out;
+}
+
+.navbar > h4:hover {
+  transform: scale(1.2);
+}
